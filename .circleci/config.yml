@@ -19,10 +19,10 @@ jobs:
             command: ls
       - run:
           # Update this line with the directory that contains your tests project file
-           working_directory: ~/ScraperFunction
+           working_directory: ~/ScraperFunction.Test
            name: Run tests
            command: |
-             dotnet test
+             dotnet test 
             
 
 workflows:
