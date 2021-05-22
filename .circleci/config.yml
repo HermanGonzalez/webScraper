@@ -17,11 +17,11 @@ jobs:
       - run:
         name: directories
         command: dir
-      # - run:
-          # # Update this line with the directory that contains your tests project file
-          # working_directory: ~/ScraperFunction
-          # name: Run tests
-          # command: |
+      - run:
+          # Update this line with the directory that contains your tests project file
+           working_directory: ~/ScraperFunction
+           name: Run tests
+           command: |
             # dotnet test
             
 
