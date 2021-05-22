@@ -22,7 +22,7 @@ jobs:
            working_directory: ~/ScraperFunction
            name: Run tests
            command: |
-            # dotnet test
+             dotnet test
             
 
 workflows:
