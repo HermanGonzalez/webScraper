@@ -8,7 +8,9 @@ namespace ScraperFunction.Test
         [Fact]
         public void Test1()
         {
+            var test = "test";
 
+            Assert.Null(test);
         }
     }
 }
