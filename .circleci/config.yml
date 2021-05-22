@@ -16,7 +16,7 @@ jobs:
       # Then simply use the dotnet container as you'd expect and run your tests
       - run:
             name: directories
-            working_directory: ~/ScraperFunction.Test
+            working_directory: ScraperFunction.Test
             command: ls
       - run:
           # Update this line with the directory that contains your tests project file
