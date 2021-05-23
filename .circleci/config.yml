@@ -24,8 +24,13 @@ jobs:
            name: Run tests
            command: |
              dotnet test 
-            
-
+      - run:
+            name: build
+            working_directory: ScraperFunction
+            command: |
+              dotnet publish
+      - store_artifacts:
+               path: /bin/Debug/netcoreapp3.1/publish/bin
 workflows:
   # Below is the definition of your workflow.
   # Inside the workflow, you provide the jobs you want to run, e.g this workflow runs the build-and-test job above.
