@@ -19,4 +19,21 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Adapters\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ScraperFunction\ScraperFunction.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Resources\LastPage.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\TestPage.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
