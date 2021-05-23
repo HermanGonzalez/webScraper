@@ -19,6 +19,12 @@ jobs:
             working_directory: ScraperFunction.Test
             command: ls
       - run:
+            name: pw
+            command: |
+                powershell
+                Get-Host | Select-Object Version
+                
+      - run:
           # Update this line with the directory that contains your tests project file
            working_directory: ScraperFunction.Test
            name: Run tests
