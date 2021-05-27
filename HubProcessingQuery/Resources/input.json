@@ -1,0 +1,222 @@
+[
+  {
+    "id": "27608ff3-6ca5-4382-89c2-103f13a2b820",
+    "Name": "How Music Works",
+    "Price": "£37.32",
+    "Rating": 2,
+    "scrapedTime": "2021-05-24T20:25:39.1314719",
+    "EventProcessedUtcTime": "2021-05-25T20:11:43.4212170Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-05-24T20:25:39.3680000Z"
+  },
+  {
+    "id": "69f7173d-b0d9-4cc1-b4a6-4c016334ecbc",
+    "Name": "In Her Wake",
+    "Price": "£12.84",
+    "Rating": 1,
+    "scrapedTime": "2021-05-24T20:25:39.1311137",
+    "EventProcessedUtcTime": "2021-05-25T20:11:43.4212170Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-05-24T20:25:39.3680000Z"
+  },
+  {
+    "id": "544a95cb-9b5f-44d0-9742-23e9f62ce215",
+    "Name": "Tipping the Velvet",
+    "Price": "£53.74",
+    "Rating": 1,
+    "scrapedTime": "2021-05-24T20:25:37.3334398",
+    "EventProcessedUtcTime": "2021-05-25T20:11:42.4157490Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-05-24T20:25:37.5860000Z"
+  },
+  {
+    "id": "f4deb626-7ddb-4ad0-82a2-6a3756063b24",
+    "Name": "Soumission",
+    "Price": "£50.10",
+    "Rating": 1,
+    "scrapedTime": "2021-05-24T20:25:37.3335732",
+    "EventProcessedUtcTime": "2021-05-25T20:11:42.4157490Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-05-24T20:25:37.5860000Z"
+  },
+  {
+    "id": "7752982b-5c41-4038-b28e-f0d86dfdf17b",
+    "Name": "Sharp Objects",
+    "Price": "£47.82",
+    "Rating": 4,
+    "scrapedTime": "2021-05-24T20:25:37.3336384",
+    "EventProcessedUtcTime": "2021-05-25T20:11:42.4157490Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-05-24T20:25:37.5860000Z"
+  },
+  {
+    "id": "0fd2ec35-c487-4cfe-b47e-9f41a78028b0",
+    "Name": "Sapiens: A Brief History of Humankind",
+    "Price": "£54.23",
+    "Rating": 5,
+    "scrapedTime": "2021-05-24T20:25:37.3336996",
+    "EventProcessedUtcTime": "2021-05-25T20:11:42.4157490Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-05-24T20:25:37.5860000Z"
+  },
+  {
+    "id": "f239d804-0d22-4734-ad87-168b1a8e3647",
+    "Name": "The Requiem Red",
+    "Price": "£22.65",
+    "Rating": 1,
+    "scrapedTime": "2021-05-24T20:25:37.3338277",
+    "EventProcessedUtcTime": "2021-05-25T20:11:42.4157490Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-05-24T20:25:37.5860000Z"
+  },
+  {
+    "id": "a37705d3-a2f2-41a6-8e87-3277471ce9b1",
+    "Name": "The Dirty Little Secrets of Getting Your Dream Job",
+    "Price": "£33.34",
+    "Rating": 4,
+    "scrapedTime": "2021-05-24T20:25:37.3338984",
+    "EventProcessedUtcTime": "2021-05-25T20:11:42.4157490Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-05-24T20:25:37.5860000Z"
+  },
+  {
+    "id": "aba14e70-0eae-48d4-9463-75e6cc4145e5",
+    "Name": "The Coming Woman: A Novel Based on the Life of the Infamous Feminist, Victoria Woodhull",
+    "Price": "£17.93",
+    "Rating": 3,
+    "scrapedTime": "2021-05-24T20:25:37.3340190",
+    "EventProcessedUtcTime": "2021-05-25T20:11:42.4157490Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-05-24T20:25:37.5860000Z"
+  },
+  {
+    "id": "88f7c14d-71a6-4f14-8c00-d00e27a643a2",
+    "Name": "The Boys in the Boat: Nine Americans and Their Epic Quest for Gold at the 1936 Berlin Olympics",
+    "Price": "£22.60",
+    "Rating": 4,
+    "scrapedTime": "2021-05-24T20:25:37.3340866",
+    "EventProcessedUtcTime": "2021-05-25T20:11:42.4157490Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-05-24T20:25:37.5860000Z"
+  },
+  {
+    "id": "c4b3f348-ce06-405a-b42f-01d38c51ba66",
+    "Name": "The Black Maria",
+    "Price": "£52.15",
+    "Rating": 1,
+    "scrapedTime": "2021-05-24T20:25:37.3341490",
+    "EventProcessedUtcTime": "2021-05-25T20:11:42.4157490Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-05-24T20:25:37.5860000Z"
+  },
+  {
+    "id": "e7d2ca88-e9de-4957-9a73-cddbbf981285",
+    "Name": "Starving Hearts (Triangular Trade Trilogy, #1)",
+    "Price": "£13.99",
+    "Rating": 2,
+    "scrapedTime": "2021-05-24T20:25:37.3342119",
+    "EventProcessedUtcTime": "2021-05-25T20:11:43.4212170Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-05-24T20:25:37.5860000Z"
+  },
+  {
+    "id": "349b4769-63ed-49b2-b4a3-b549953f4ea8",
+    "Name": "Shakespeare&#39;s Sonnets",
+    "Price": "£20.66",
+    "Rating": 4,
+    "scrapedTime": "2021-05-24T20:25:37.3342762",
+    "EventProcessedUtcTime": "2021-05-25T20:11:43.4212170Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-05-24T20:25:37.5860000Z"
+  },
+  {
+    "id": "607f570d-05b2-4702-8079-130a86c85748",
+    "Name": "Set Me Free",
+    "Price": "£17.46",
+    "Rating": 5,
+    "scrapedTime": "2021-05-24T20:25:37.3343380",
+    "EventProcessedUtcTime": "2021-05-25T20:11:43.4212170Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-05-24T20:25:37.5860000Z"
+  },
+  {
+    "id": "859be8de-6b73-445a-b296-43bef00a51d7",
+    "Name": "Scott Pilgrim&#39;s Precious Little Life (Scott Pilgrim #1)",
+    "Price": "£52.29",
+    "Rating": 5,
+    "scrapedTime": "2021-05-24T20:25:37.3344018",
+    "EventProcessedUtcTime": "2021-05-25T20:11:43.4212170Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-05-24T20:25:37.5860000Z"
+  },
+  {
+    "id": "f0755945-a9ea-497c-81ce-8185524acdc9",
+    "Name": "Rip it Up and Start Again",
+    "Price": "£35.02",
+    "Rating": 5,
+    "scrapedTime": "2021-05-24T20:25:37.3344690",
+    "EventProcessedUtcTime": "2021-05-25T20:11:43.4212170Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-05-24T20:25:37.5860000Z"
+  },
+  {
+    "id": "9f2bde10-0b63-4860-af55-e235e20cc899",
+    "Name": "Our Band Could Be Your Life: Scenes from the American Indie Underground, 1981-1991",
+    "Price": "£57.25",
+    "Rating": 3,
+    "scrapedTime": "2021-05-24T20:25:37.3345313",
+    "EventProcessedUtcTime": "2021-05-25T20:11:43.4212170Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-05-24T20:25:37.5860000Z"
+  },
+  {
+    "id": "dd4c4e05-183e-4068-bf76-a7a2117aec28",
+    "Name": "Olio",
+    "Price": "£23.88",
+    "Rating": 1,
+    "scrapedTime": "2021-05-24T20:25:37.3345914",
+    "EventProcessedUtcTime": "2021-05-25T20:11:43.4212170Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-05-24T20:25:37.5860000Z"
+  },
+  {
+    "id": "b5524724-db7c-4a31-89eb-d330b7d0c4cd",
+    "Name": "Mesaerion: The Best Science Fiction Stories 1800-1849",
+    "Price": "£37.59",
+    "Rating": 1,
+    "scrapedTime": "2021-05-24T20:25:37.3346515",
+    "EventProcessedUtcTime": "2021-05-25T20:11:43.4212170Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-05-24T20:25:37.5860000Z"
+  },
+  {
+    "id": "6e0cd2b4-4ff8-46ed-bbc6-1994fa181938",
+    "Name": "Libertarianism for Beginners",
+    "Price": "£51.33",
+    "Rating": 2,
+    "scrapedTime": "2021-05-24T20:25:37.3347121",
+    "EventProcessedUtcTime": "2021-05-25T20:11:43.4212170Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-05-24T20:25:37.5860000Z"
+  },
+  {
+    "id": "34f7d0f3-3e76-453a-9965-be559938b1c6",
+    "Name": "It&#39;s Only the Himalayas",
+    "Price": "£45.17",
+    "Rating": 2,
+    "scrapedTime": "2021-05-24T20:25:37.3347785",
+    "EventProcessedUtcTime": "2021-05-25T20:11:43.4212170Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-05-24T20:25:37.5860000Z"
+  },
+  {
+    "id": "d26f1581-085f-43a9-aca7-a5e7766275f7",
+    "Name": "A Light in the Attic",
+    "Price": "£51.77",
+    "Rating": 3,
+    "scrapedTime": "2021-05-24T20:25:37.2974252",
+    "EventProcessedUtcTime": "2021-05-25T20:11:42.4157490Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-05-24T20:25:37.5860000Z"
+  }
+]

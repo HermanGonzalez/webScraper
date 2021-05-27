@@ -2,11 +2,13 @@
 
 namespace ScraperFunction.Configuration
 {
-    class NullableServiceConfiguration
+    public class NullableServiceConfiguration
     {
         public string? ScrapPageUrl { get; set; }
         public string? LandingPage { get; set; }
-
+        public string? EventHubName { get; set; }
+        public string? EventHubConnectionString { get; set; }
+        
         public ServiceConfiguration Validate()
         {
             foreach (PropertyInfo pi in GetType().GetProperties())
@@ -22,7 +24,9 @@ namespace ScraperFunction.Configuration
 
             return new ServiceConfiguration(
                 ScrapPageUrl, 
-                LandingPage);
+                LandingPage,
+                EventHubName,
+                EventHubConnectionString);
         }
     }
 }

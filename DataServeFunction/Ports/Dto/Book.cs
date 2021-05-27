@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Microsoft.Azure.Cosmos.Table;
+using System;
 
-namespace ScraperFunction.Data
+namespace DataServeFunction.Ports.Dto
 {
-    public class Book
+    public class Book : TableEntity
     {
         public Guid id { get; set; }
         public string Name { get; set; }

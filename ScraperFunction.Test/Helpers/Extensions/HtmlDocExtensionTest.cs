@@ -1,6 +1,5 @@
-﻿using HtmlAgilityPack;
-using Microsoft.ServiceBus.Messaging;
-using ScraperFunction.Data;
+﻿using Azure.Messaging.EventHubs;
+using HtmlAgilityPack;
 using ScraperFunction.Helpers.Extensions;
 using ScraperFunction.Helpers.Parsers.Contexts;
 using System.Collections.Generic;

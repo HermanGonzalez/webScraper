@@ -3,9 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScraperFunction", "ScraperFunction.csproj", "{F722972C-EB8B-438D-AF37-DA90788F0CED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScraperFunction", "ScraperFunction.csproj", "{F722972C-EB8B-438D-AF37-DA90788F0CED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScraperFunction.Test", "..\ScraperFunction.Test\ScraperFunction.Test.csproj", "{D850603E-29A9-448A-9022-97F40C7A2495}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScraperFunction.Test", "..\ScraperFunction.Test\ScraperFunction.Test.csproj", "{D850603E-29A9-448A-9022-97F40C7A2495}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataServeFunction", "..\DataServeFunction\DataServeFunction.csproj", "{3EA89319-DF43-4F6E-B976-6B02C5A8C36C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scraper", "Scraper", "{25B62B10-0CF7-4916-89D6-5D40429788E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{57614EDD-75F9-41F5-B33A-0B4A1B32A0E5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataServeFunction.test", "..\DataServeFunction.test\DataServeFunction.test.csproj", "{C1FCC65A-049A-4992-AA1D-CC6CDDCF523E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +29,23 @@ Global
 		{D850603E-29A9-448A-9022-97F40C7A2495}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D850603E-29A9-448A-9022-97F40C7A2495}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D850603E-29A9-448A-9022-97F40C7A2495}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EA89319-DF43-4F6E-B976-6B02C5A8C36C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EA89319-DF43-4F6E-B976-6B02C5A8C36C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EA89319-DF43-4F6E-B976-6B02C5A8C36C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EA89319-DF43-4F6E-B976-6B02C5A8C36C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1FCC65A-049A-4992-AA1D-CC6CDDCF523E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1FCC65A-049A-4992-AA1D-CC6CDDCF523E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1FCC65A-049A-4992-AA1D-CC6CDDCF523E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1FCC65A-049A-4992-AA1D-CC6CDDCF523E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F722972C-EB8B-438D-AF37-DA90788F0CED} = {25B62B10-0CF7-4916-89D6-5D40429788E0}
+		{D850603E-29A9-448A-9022-97F40C7A2495} = {25B62B10-0CF7-4916-89D6-5D40429788E0}
+		{3EA89319-DF43-4F6E-B976-6B02C5A8C36C} = {57614EDD-75F9-41F5-B33A-0B4A1B32A0E5}
+		{C1FCC65A-049A-4992-AA1D-CC6CDDCF523E} = {57614EDD-75F9-41F5-B33A-0B4A1B32A0E5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D4994F8B-B896-411A-A3AA-7F958DBB7EA4}

@@ -1,5 +1,5 @@
-﻿using HtmlAgilityPack;
-using Microsoft.ServiceBus.Messaging;
+﻿using Azure.Messaging.EventHubs;
+using HtmlAgilityPack;
 using Newtonsoft.Json;
 using ScraperFunction.Data;
 using System;
@@ -21,9 +21,11 @@ namespace ScraperFunction.Helpers.Extensions
         public static EventData ParseHtmlNodeToEvent(this HtmlNode node) {
             var book = new Book
             {
+                id = Guid.NewGuid(),
                 Name = node.GetName(),
                 Price = node.GetPrice(),
-                Rating = node.GetRating()
+                Rating = node.GetRating(),
+                scrapedTime = DateTime.Now
             };
 
             var dataAsJson = JsonConvert.SerializeObject(book);

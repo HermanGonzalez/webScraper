@@ -1,0 +1,8 @@
+﻿{
+  "InputAlias": "input",
+  "Type": "Data Stream",
+  "Format": "Json",
+  "FilePath": "../Resources/input.json",
+  "Sample": "{\r\n  \"id\": \"27608ff3-6ca5-4382-89c2-103f13a2b820\",\r\n  \"Name\": \"How Music Works\",\r\n  \"Price\": \"�37.32\",\r\n  \"Rating\": 2,\r\n  \"scrapedTime\": \"2021-05-24T20:25:39.1314719\",\r\n  \"EventProcessedUtcTime\": \"2021-05-25T20:11:43.4212170Z\",\r\n  \"PartitionId\": 0,\r\n  \"EventEnqueuedUtcTime\": \"2021-05-24T20:25:39.3680000Z\"\r\n}",
+  "ScriptType": "InputMock"
+}

@@ -1,5 +1,5 @@
-﻿using HtmlAgilityPack;
-using Microsoft.ServiceBus.Messaging;
+﻿using Azure.Messaging.EventHubs.Producer;
+using Microsoft.Extensions.Logging;
 using ScraperFunction.Configuration;
 using ScraperFunction.Helpers.Extensions;
 using ScraperFunction.Helpers.Parsers;
@@ -15,14 +15,20 @@ namespace ScraperFunction.Helpers.DataScraper.Contexts
         private readonly string _page;
         private readonly string _firstPage;
         private readonly IHtmlParser _htmlParser;
-        private readonly EventHubClient _eventHubClient;
+        private readonly string _eventHubConnectionString;
+        private readonly string _eventHubName;
+        private readonly ILogger<SiteScraper> _logger;
 
-
-        public SiteScraper(IHtmlParser parser, ServiceConfiguration config) {
+        public SiteScraper(
+            IHtmlParser parser, 
+            ServiceConfiguration config, 
+            ILogger<SiteScraper> logger) {
             _page = config.ScrapPageUrl;
             _firstPage = config.LandingPage;
             _htmlParser = parser;
-            _eventHubClient = EventHubClient.CreateFromConnectionString(config.EventHubConnectionString);
+            _eventHubConnectionString = config.EventHubConnectionString;
+            _eventHubName = config.EventHubName;
+            _logger = logger;
         }
         
         
@@ -33,28 +39,61 @@ namespace ScraperFunction.Helpers.DataScraper.Contexts
 
         private async Task<string> CallUrl(string fullUrl)
         {
-            HttpClient client = new HttpClient();
-            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls13;
-            client.DefaultRequestHeaders.Accept.Clear();
+            try
+            {
+                _logger.LogInformation("scraping current page: " + fullUrl);
+                HttpClient client = new HttpClient();
+                ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls13;
+                client.DefaultRequestHeaders.Accept.Clear();
 
-            var response = client.GetStringAsync(fullUrl);
+                var response = client.GetStringAsync(fullUrl);
 
-            return await response;
+                return await response;
+            }
+            catch (Exception ex) {
+                _logger.LogError("fail load page", ex);
+                throw;
+            }
         }
 
         private async Task ProcessDocument(string currentPage) {
-            var stringPage = await CallUrl($"{_page}/{currentPage}");
-            var htmlDocument = _htmlParser.Parse(stringPage);
+            try
+            {
+                _logger.LogInformation("start scraping " + currentPage);
+
+                string nextPageUrl = Url(currentPage);
+                
+                var stringPage = await CallUrl($"{_page}/{nextPageUrl}");
+                var htmlDocument = _htmlParser.Parse(stringPage);
 
 
-            var nextPage = htmlDocument.GetNextPage();
+                var nextPage = htmlDocument.GetNextPage();
+                await using (var producerClient = new EventHubProducerClient(_eventHubConnectionString))
+                {
+                    using EventDataBatch eventBatch = await producerClient.CreateBatchAsync();
 
-            foreach (var item in htmlDocument.ParseHtmlDocumentToBooks())
-                await _eventHubClient.SendAsync(item);
-            
+                    foreach (var item in htmlDocument.ParseHtmlDocumentToBooks())
+                        eventBatch.TryAdd(item);
 
-            if (!string.IsNullOrEmpty(nextPage))
-                await ProcessDocument(nextPage);
+                    await producerClient.SendAsync(eventBatch);
+                }
+
+
+
+                if (!string.IsNullOrEmpty(nextPage))
+                    await ProcessDocument(nextPage);
+            }
+            catch (Exception ex) 
+            {
+                _logger.LogError("fail full scraping routine", ex);
+            }
+        }
+
+        private string Url(string currentUrl) {
+            if (!currentUrl.Contains("catalogue") && !currentUrl.Contains("index"))
+                return $"catalogue/{currentUrl}";
+
+           return currentUrl;
         }
     }
 }
