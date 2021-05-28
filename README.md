@@ -25,5 +25,5 @@ present the data as a json object.
 The service function is locked behind a token bearer scheme, to use the api
 just generate any valid jwt token.
   
-The current example is api running as:
+The current example api is running as:
 https://http-triggerd-azure-functions.azurewebsites.net/api/books
