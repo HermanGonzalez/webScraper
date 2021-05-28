@@ -1,6 +1,6 @@
 # webScraper
 ## Setup Environment
-Run the following line in order:
+Run the following line in order in the infrastructure folder:
 
 1. az login
 2. run the setup.sh script to create the account storage for Terraform
