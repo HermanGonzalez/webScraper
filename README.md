@@ -1,4 +1,4 @@
-# webScraper
+# Web Scraper Pipeline
 ## Setup Environment
 Run the following line in order in the infrastructure folder:
 
