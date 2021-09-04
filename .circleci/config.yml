@@ -34,7 +34,7 @@ jobs:
 
   infrastructure-build:
     docker:
-        - image:  mcr.microsoft.com/terraform-on-azure/shell:latest
+        - image:  mcr.microsoft.com/terraform-on-azure/shell
     steps:
         - checkout
 
