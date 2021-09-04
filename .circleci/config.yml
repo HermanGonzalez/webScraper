@@ -26,11 +26,24 @@ jobs:
              dotnet test 
       - run:
             name: build
-            working_directory: ScraperFunction/test
+            working_directory: ScraperFunction
             command: |
               dotnet publish
       - store_artifacts:
                path: /root/project/ScraperFunction/bin/Debug/netcoreapp3.1/publish
+
+  infrastructure-build:
+    docker:
+        - image:  mcr.microsoft.com/terraform-on-azure/shell:latest
+    steps:
+        - checkout
+
+        - run: 
+            working_directory: Infrastructure
+            name: Init
+            command: |
+               terraform init |
+               terraform validate
 
 workflows:
   # Below is the definition of your workflow.
@@ -40,3 +53,4 @@ workflows:
   full-build: 
     jobs:
       - build-and-test
+      - infrastructure-build
