@@ -26,16 +26,17 @@ jobs:
              dotnet test 
       - run:
             name: build
-            working_directory: ScraperFunction
+            working_directory: ScraperFunction/test
             command: |
               dotnet publish
       - store_artifacts:
                path: /root/project/ScraperFunction/bin/Debug/netcoreapp3.1/publish
+
 workflows:
   # Below is the definition of your workflow.
   # Inside the workflow, you provide the jobs you want to run, e.g this workflow runs the build-and-test job above.
   # CircleCI will run this workflow on every commit.
   # For more details on extending your workflow, see the configuration docs: https://circleci.com/docs/2.0/configuration-reference/#workflows
-  sample: 
+  full-build: 
     jobs:
       - build-and-test
